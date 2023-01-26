@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .smallContainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 77px;
+}
+
+.container .smallContainer .firstPara {
+    font-size: 64px;
+    color: rgb(92, 90, 90);
+}
+
+.container .smallContainer .secondPara {
+    font-size: 20px;
+    color: rgb(92, 90, 90);
+}
+
+.container .smallContainer .secondPara_div {
+    margin-top: 34px;
+    display: flex;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .smallContainer .secondPara_div input {
+    width: 546px;
+    outline: none;
+    border: 2px solid rgb(67 255 255);
+    height: 29px;
+    border-radius: 6px;
+}
+
+.container .smallContainer .secondPara_div .forImages {
+    display: flex;
+    flex-direction: row;
+    width: 86%;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.container .smallContainer .secondPara_div .forImages img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 23px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 560px) {
+    .container .smallContainer .secondPara_div input {
+        width: 400px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 408px) {
+    .container .smallContainer .secondPara_div input {
+        width: 270px;
+        height: 37px;
+    }
+
+    .container .smallContainer .secondPara_div .forImages img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 317px) {
+    .container .smallContainer .firstPara {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .container .smallContainer .secondPara_div input {
+        width: 270px;
+        height: 37px;
+    }
+
+    .container .smallContainer .secondPara_div .forImages img {
+        width: 220px;
+        height: 220px;
+    }
+}
